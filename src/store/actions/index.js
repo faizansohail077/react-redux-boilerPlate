@@ -1,5 +1,5 @@
-import authAction from './AuthActions'
-import cartAction from './CartAction'
+import { authAction } from './AuthAction'
+import { cartAction } from './CartAction'
 
 export {
     authAction,

@@ -1,11 +1,12 @@
-export default authAction = (payload) => {
+import { SIGN_IN } from "../../StoreConstants/AuthConstants"
+export function authAction(data) {
     return dispatch => {
-        return new Promise = (resolve, reject) => {
-            dispatch({
-                type: '',
-                payload: ''
-            })
-        }
+        return new Promise(function (resolve, reject) {
+            setTimeout(() => {
+                resolve(true)
+            }, 3000);
+            dispatch({ type: SIGN_IN, payload: data })
+
+        })
     }
 }
-

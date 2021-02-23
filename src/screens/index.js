@@ -1,4 +1,4 @@
-import AboutPage from './AbouPage'
+import AboutPage from './AboutPage'
 import HomePage from './HomePage'
 
 export {

@@ -1,5 +1,5 @@
-import { combineReducers, createStore } from 'redux';
-import { devToolsEnhancer } from 'redux-devtools-extension/logOnlyInProduction';
+import { applyMiddleware, combineReducers, createStore } from 'redux';
+import thunk from 'redux-thunk';
 import { CartReducer, AuthReducer } from './reducers'
 
 const rootReducer = combineReducers({
@@ -7,4 +7,5 @@ const rootReducer = combineReducers({
     AuthReducer
 })
 
-export const store = createStore(rootReducer, devToolsEnhancer())
+
+export const store = createStore(rootReducer, applyMiddleware(thunk))
