@@ -1,6 +1,8 @@
 import React from 'react'
-import './HomePage.css'
-const HomePage = () => {
+import './AboutPage.css'
+
+
+const AboutPage = () => {
     return (
         <div>
 
@@ -8,4 +10,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default AboutPage

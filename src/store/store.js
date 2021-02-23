@@ -1,10 +1,6 @@
 import { combineReducers, createStore } from 'redux';
 import { devToolsEnhancer } from 'redux-devtools-extension/logOnlyInProduction';
-import CartReducer from '../reducers/CartReducer'
-import AuthReducer from '../reducers/AuthReducer'
-
-
-
+import { CartReducer, AuthReducer } from './reducers'
 
 const rootReducer = combineReducers({
     CartReducer,
